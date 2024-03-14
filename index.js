@@ -38,7 +38,8 @@ app.use("/", authroutes);
 app.use(`/admin`, adminRoutes);
 app.use("/user", userRoutes);
 
-const dbURI = "mongodb://127.0.0.1/SCRIPPLE";
+const dbURI =
+  "mongodb://test:test@ac-4lbhekl-shard-00-00.bki8yrw.mongodb.net:27017,ac-4lbhekl-shard-00-01.bki8yrw.mongodb.net:27017,ac-4lbhekl-shard-00-02.bki8yrw.mongodb.net:27017/SCRIPPLE?replicaSet=atlas-2x40hu-shard-0&ssl=true&authSource=admin";
 connect(dbURI);
 
 app.listen(5000, () => {
